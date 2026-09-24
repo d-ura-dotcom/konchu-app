@@ -20,7 +20,6 @@ h1{
 .container{
   display:flex;
   justify-content:space-around;
-  flex-wrap:wrap;
 }
 
 .card{
@@ -29,8 +28,31 @@ h1{
 }
 
 img{
-  width:100%;
-  max-width:350px;
+  width:auto;
+  height:420px;
+}
+
+.buttons{
+  position:fixed;
+  bottom:20px;
+  left:0;
+  right:0;
+  z-index:1000;
+}
+
+button{
+  font-size:32px;
+  padding:12px 28px;
+  margin:8px;
+  border-radius:25px;
+  background:black;
+  color:white;
+}
+
+button:last-child{
+  background:white;
+  color:black;
+  border:3px solid black;
 }
 </style>
 </head>
@@ -49,12 +71,23 @@ img{
 <div class="card">
 <h2>ショウリョウバッタ</h2>
 <img src="batta.png">
-
+</div>
+  
 <div class="card">
 <h2>アキアカネ</h2>
-<img src="akiakane.png">
+<img src="akiakane.png" style="height:460px;">
 </div>
 
+</div>
+
+<div class="buttons">
+<button>頭</button>
+<button>むね</button>
+<button>はら</button>
+<button>しょっ角</button>
+<button>あし</button>
+<button>目</button>
+<button>リセット</button>
 </div>
 
 </body>
